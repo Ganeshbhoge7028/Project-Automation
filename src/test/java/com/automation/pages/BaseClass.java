@@ -15,7 +15,7 @@ public WebDriver driver;
 	
 	}
 
-    @AfterClass
+  //  @AfterClass
 	public void tearDown() {
 		Browser.closebrowser(driver);
 	}
