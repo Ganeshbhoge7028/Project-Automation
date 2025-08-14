@@ -5,7 +5,7 @@ import java.io.FileInputStream;
 
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class git ExcelDataProvider {
+public class  ExcelDataProvider {
 	XSSFWorkbook book;
 	public ExcelDataProvider() {
 		
