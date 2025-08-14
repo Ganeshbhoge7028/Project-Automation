@@ -17,9 +17,17 @@ public class ExcelDataProvider {
 		} catch (Exception e) {
 			// TODO: handle exception
 			System.out.println("Unable to Read Excel File"+e.getMessage());
+			
 		} 
-		 
-		
+	}
+	public double getStringData(int sheetIndex, int row, int column) {
+		return book.getSheetAt(sheetIndex).getRow(0).getCell(0).getNumericCellValue();
+	}
+	public String getStringData(String sheetname, int row, int column) {
+		return book.getSheet(sheetname).getRow(0).getCell(0).getStringCellValue();
+	}
+	public double getNumericData(String sheetname, int row, int column) {
+		return book.getSheet(sheetname).getRow(0).getCell(0).getNumericCellValue();
 	}
 
 }
