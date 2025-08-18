@@ -14,7 +14,7 @@ public class Browser {
 
 			 driver = new EdgeDriver();
 			
-		}else if(Browsername.equals("firefox")) {
+		}else if(Browsername.equals("firefox")) { 
 			System.setProperty("webdriver.gecko.driver", "./Drivers/geckodriver.exe");
 			driver=new FirefoxDriver();
 	}else {

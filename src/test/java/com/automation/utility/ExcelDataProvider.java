@@ -21,13 +21,13 @@ public class  ExcelDataProvider {
 		} 
 	}
 	public double getStringData(int sheetIndex, int row, int column) {
-		return book.getSheetAt(sheetIndex).getRow(0).getCell(0).getNumericCellValue();
+		return book.getSheetAt(sheetIndex).getRow(row).getCell(column).getNumericCellValue();
 	}
 	public String getStringData(String sheetname, int row, int column) {
-		return book.getSheet(sheetname).getRow(0).getCell(0).getStringCellValue();
+		return book.getSheet(sheetname).getRow(row).getCell(column).getStringCellValue();
 	}
 	public double getNumericData(String sheetname, int row, int column) {
-		return book.getSheet(sheetname).getRow(0).getCell(0).getNumericCellValue();
-	}
+		return book.getSheet(sheetname).getRow(row).getCell(column).getNumericCellValue();
+	} 
 
 }

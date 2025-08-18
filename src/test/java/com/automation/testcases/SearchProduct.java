@@ -7,7 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class SearchProduct extends BaseClass {
-
+ 
     @Test
     public void searchProductTest() {
         ProductsPage productsPage = PageFactory.initElements(driver, ProductsPage.class);
@@ -15,7 +15,7 @@ public class SearchProduct extends BaseClass {
         productsPage.clickProductsButton();
         Assert.assertTrue(productsPage.isAllProductsHeaderVisible(), "All Products header not visible");
 
-        productsPage.searchProduct("T-shirt");
+        productsPage.searchProduct(config.getdatafromConfig("Productname"));
         Assert.assertTrue(productsPage.isSearchedProductsHeaderVisible(), "Searched Products header not visible");
 
         Assert.assertTrue(productsPage.areSearchResultsVisible(), "No search results found");

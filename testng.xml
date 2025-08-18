@@ -3,9 +3,9 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      
-      <class name="com.automation.testcases.Login"/>
-        <class name="com.automation.testcases.SearchProduct"/>
+<class name="com.automation.testcases.Login" />
+			<class name="com.automation.testcases.SearchProduct" />
+			
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

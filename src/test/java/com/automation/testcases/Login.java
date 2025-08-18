@@ -1,8 +1,6 @@
 package com.automation.testcases;
 
 
-import com.automation.utility.ExcelDataProvider;
-import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
 import org.openqa.selenium.support.PageFactory;
 
 //import org.openqa.selenium.support.PageFactory;
@@ -17,13 +15,13 @@ public class Login extends BaseClass{
 
 
 	@Test
-public void LogintoApp() throws InterruptedException {
+public void LogintoApp() throws InterruptedException { 
         System.out.println(excel.getStringData("Login",0,0));
-	LoginPage loginPage=PageFactory.initElements( driver, LoginPage.class);
+        System.out.println(excel.getStringData("Login",0,1));
+	LoginPage loginPage =PageFactory.initElements( driver, LoginPage.class);
 
 	loginPage.loginToAPP(excel.getStringData("Login",0,0),excel.getStringData("Login",0,1));
-	Thread.sleep(5000);
-
+	
+	
 }
-
 }

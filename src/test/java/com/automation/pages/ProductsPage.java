@@ -3,9 +3,6 @@ package com.automation.pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
-import org.testng.annotations.Test;
 
 public class ProductsPage extends BaseClass{
     public ProductsPage(WebDriver driver) {}
@@ -39,7 +36,7 @@ public class ProductsPage extends BaseClass{
     public void searchProduct(String productName) {
         searchInput.sendKeys(productName);
         searchButton.click();
-    }
+    } 
 
     public boolean isSearchedProductsHeaderVisible() {
         return searchedProductsHeader.isDisplayed();
